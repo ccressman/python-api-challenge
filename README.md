@@ -10,8 +10,10 @@ This Python script visualizes the weather of over 500 randomly generated cities 
 
 
 Next, the cities were separated into those located within the Northern and Southern hemispheres. A series of linear regression plots were then created to illustrate the correlation between latitutde and max temperature (in Farenheit), humidity, cloudiness, and wind speed. The results are show below: 
+
 ![image](https://user-images.githubusercontent.com/119253324/219884685-2edbb398-eaad-4418-b344-f5f8cb3a5d8a.png)
 ![image](https://user-images.githubusercontent.com/119253324/219884696-31cc4443-a1a7-4077-8c32-661787fcde55.png)
+
 **Discussion about the linear relationship:** The above scatterplots were generated with the intent of measuring the correlation between latitude and max temperature (in fahrenheit), first for cities located within the Northern Hemisphere, and subsequently for cities located within the Southern Hemisphere. 
 
 This evaluation revealed a relatively strong negative correlation between max temperature and latitude for cities located in the Northern Hemisphere. The calculated correlation coefficient r, which quantifies the degree of the linear relationship between the two variables being measured, was roughly -0.85. This indicates a relatively strong trend between lower (colder) temperatures as the cities' geographic location moved farther North.
@@ -27,18 +29,16 @@ The calculated value of r between the variables of latitutde and max temperature
 
 ![image](https://user-images.githubusercontent.com/119253324/219884745-99a91bc6-443a-4b1b-8197-f2787ddfd5ca.png)
 ![image](https://user-images.githubusercontent.com/119253324/219884751-72494b2d-8b3f-4826-b050-7cb7ab44a4f1.png)
+
 **Discussion about the linear relationship:** The above scatterplots were generated with the intent of measuring the correlation between latitude and cloudiness, for cities located in the Northern and Southern Hemispheres. The calculated r values were roughly 0.37 and 0.44, respectively. This indicates a very weak positive correlation between the measures. Given this figure, no trend is readily apparent. 
 
-
 ![image](https://user-images.githubusercontent.com/119253324/219884765-f012c45e-e20c-4cf8-a034-e05c2b98b1c1.png)
-
 ![image](https://user-images.githubusercontent.com/119253324/219884782-cb605a20-3290-4614-9303-536fcef7d0e1.png)
+
 **Discussion about the linear relationship:** The above scatterplots were generated with the intent of measuring the correlation between latitude and wind speed, for cities located in the Northern and Southern Hemispheres. The calculated r values were roughly 0.13 and -0.33, respectively. This indicates a very weak positive and negative correlation between the measures. Given this low degree of correlation, no trends are readily apparent. 
 
 
-Part Two: VacationPy Script
-
-Part 2: VacationPy
+**Part Two: VacationPy Script
 This script uses the weather data generated in the WeatherPy script to create map visualizations using the geoViews Python library and the Geoapify API.
 
 First, a map was created to display a point for every city, with the relative size of the point refelcting the city's humidity. The result is below: 
